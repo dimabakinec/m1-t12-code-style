@@ -8,8 +8,8 @@ public class DepositCalculator {
         return calculateRounding(pay, 2);
     }
 
-    double calculateSimplePercent(double amount, double doubleYearRate, int depositPeriod) {
-        return calculateRounding(amount + amount * doubleYearRate * depositPeriod, 2);
+    double calculateSimplePercent(double amount, double yearRate, int depositPeriod) {
+        return calculateRounding(amount + amount * yearRate * depositPeriod, 2);
     }
 
     double calculateRounding(double value, int places) {
